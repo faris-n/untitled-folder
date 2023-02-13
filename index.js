@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-var PORT = 3000;
+var PORT = 80;
 
 // Without middleware
 app.get("/", function (req, res) {
@@ -18,7 +18,7 @@ app.get("/", function (req, res) {
   res.end();
 });
 
-app.listen(3200, function (err) {
+app.listen(80, function (err) {
   if (err) console.log(err);
   console.log("Server listening on PORT", PORT);
 });
